@@ -1,0 +1,78 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=Noto+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+.container {
+    width: 80vw;
+    max-width: 37.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3em 1.8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0 0.6em 2.5em rgba(0, 7, 70, 0.2);
+}
+
+.container img {
+    width: 6.25em;
+    display: block;
+    margin: auto;
+}
+
+#location-details {
+    font-size: 1.75em;
+    text-align: center;
+    margin: 1em 0 1.7em 0;
+    color: #021d38;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+}
+
+.container button {
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: rgb(182, 244, 146);
+    color: black;
+    border: none;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.25em;
+    padding: 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container button:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .container button:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
